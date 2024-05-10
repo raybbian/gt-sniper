@@ -40,7 +40,7 @@ async def fetch_course_details(
         for s in [
             seat_info[0].text,
             seat_info[1].text,
-            # seat_info[3].text,
-            # seat_info[4].text,
+            seat_info[3].text,
+            seat_info[4].text,
         ]
     ]
