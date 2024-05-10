@@ -81,7 +81,7 @@ async def delete_course(interaction, list_index: int):
 @tree.command(name="view", description="View your hit list")
 async def view_courses(interaction):
     embed = discord.Embed(
-        title=f"{interaction.user.global_name}'s Hitlist",
+        title=f"{interaction.user.name}'s Hitlist",
         color=0xFF0000,
         description="Add courses to your hitlist with /add-course",
     )
