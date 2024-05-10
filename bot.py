@@ -110,7 +110,7 @@ async def check_courses():
     async with aiohttp.ClientSession() as session:
         for course in courses:
             _, seating = await fetch_course_details(course.crn, session)
-            if seating[0] - seating[1] > 0:
+            if seating[0] - seating[1] > 0 and seating[3] == 0:
                 await alert_users(course.crn)
 
 
