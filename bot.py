@@ -171,4 +171,4 @@ async def on_reaction_add(reaction: discord.Reaction, user):
         entry.save()
 
 
-client.run(os.environ["gt-sniper-token"])
+client.run(os.environ["GT_SNIPER_TOKEN"])
