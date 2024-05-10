@@ -104,7 +104,7 @@ async def view_courses(interaction):
     await interaction.response.send_message(embed=embed)
 
 
-@tasks.loop(seconds=5)
+@tasks.loop(seconds=60)
 async def check_courses():
     courses = Course.select()
     async with aiohttp.ClientSession() as session:
